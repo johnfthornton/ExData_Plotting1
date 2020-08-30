@@ -29,5 +29,5 @@ legend("topright",pch="-",lty= 1, lwd=2,  legend = c("Sub_metering_1","Sub_meter
 ##plot 4
 plot(Data$DateTime, Data$Global_reactive_power, type = "l", ylab = "Global_reactive_power", xlab  ="datetime")
 
-##dev.copy(png, 'plot4.png',height = 480, width = 480)
-##dev.off
+dev.copy(png, 'plot4.png',height = 480, width = 480)
+dev.off
