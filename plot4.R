@@ -20,14 +20,14 @@ plot(Data$DateTime, Data$Voltage, type = "l", ylab = "Voltage", xlab  ="datetime
 
 ##plot 3
 
-with(Data, plot(DateTime, Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = "" ))
+with(Data, plot(DateTime, Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = ""))
 with(Data, points(DateTime, Sub_metering_1, type = "l"))
 with(Data, points(DateTime, Sub_metering_2, type = "l", col = "red"))
 with(Data, points(DateTime, Sub_metering_3, type = "l", col = "blue"))
-legend("topright",pch="-", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c("black","red","blue"))
+legend("topright",pch="-",lty= 1, lwd=2,  legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c("black","red","blue"))
 
 ##plot 4
 plot(Data$DateTime, Data$Global_reactive_power, type = "l", ylab = "Global_reactive_power", xlab  ="datetime")
 
-dev.copy(png, 'plot4.png',height = 480, width = 480)
-dev.off
+##dev.copy(png, 'plot4.png',height = 480, width = 480)
+##dev.off
